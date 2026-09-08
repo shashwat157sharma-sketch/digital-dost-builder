@@ -27,7 +27,6 @@ export function Portfolio() {
         {TILES.map((t, i) => (
           <Reveal as="li" key={t} delay={i * 50}>
             <div className="card-surface flex aspect-4/3 flex-col justify-end overflow-hidden p-6">
-              <div aria-hidden className="absolute inset-0 -z-10" />
               <span className="w-fit rounded-full border border-primary/25 bg-accent px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-accent-foreground">
                 Coming soon
               </span>
