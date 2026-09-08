@@ -1,11 +1,11 @@
 import { ArrowRight, MessageCircle, TrendingUp } from "lucide-react";
-import { CONTACT } from "./brand";
+import { CONTACT, LOGO_URL } from "./brand";
 import { Reveal } from "./Reveal";
 
 /** Hero: brand gradient wash + faint circuit motif echoing the logo. */
 export function Hero() {
   return (
-    <section id="home" className="relative overflow-hidden pt-32 pb-20 sm:pt-40 sm:pb-28">
+    <section id="home" className="relative overflow-hidden pt-32 pb-20 sm:pt-36 sm:pb-28">
       {/* Abstract brand background — no photography */}
       <div aria-hidden className="pointer-events-none absolute inset-0 -z-10">
         <div className="absolute -left-32 -top-24 h-[26rem] w-[26rem] rounded-full bg-primary/12 blur-3xl" />
@@ -23,13 +23,21 @@ export function Hero() {
 
       <div className="mx-auto max-w-4xl px-5 text-center lg:px-8">
         <Reveal>
-          <span className="inline-flex items-center gap-2 rounded-full border border-primary/25 bg-accent px-4 py-1.5 text-xs font-semibold tracking-wide text-accent-foreground">
-            Har Dukan Ka Digital Dost
-          </span>
+          <div className="flex flex-col items-center">
+            <img
+              src={LOGO_URL}
+              alt="Apna Digital Sathi logo"
+              className="h-24 w-auto sm:h-28"
+              width={180}
+              height={112}
+            />
+            <p className="mt-4 font-display text-2xl font-bold text-navy sm:text-3xl">Apna Digital Sathi</p>
+            <p className="mt-2 text-sm font-semibold text-primary sm:text-base">Every Shop&apos;s Digital Friend</p>
+          </div>
         </Reveal>
 
         <Reveal delay={60}>
-          <h1 className="mt-6 text-balance font-display text-4xl font-bold leading-[1.1] text-navy sm:text-5xl lg:text-6xl">
+          <h1 className="mt-10 text-balance font-display text-4xl font-bold leading-[1.1] text-navy sm:text-5xl lg:text-6xl">
             Your shop already has customers. <span className="text-gradient-brand">Let the internet meet them.</span>
           </h1>
         </Reveal>
