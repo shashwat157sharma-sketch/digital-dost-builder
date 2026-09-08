@@ -31,16 +31,14 @@ export function Navbar() {
     >
       <nav
         aria-label="Main"
-        className="mx-auto grid max-w-7xl grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-5 py-3 lg:px-8"
+        className="mx-auto grid max-w-7xl grid-cols-[1fr_auto_1fr] items-center gap-4 px-5 py-3 lg:px-8"
       >
-        <a href="#home" className="flex min-w-0 items-center gap-2" aria-label="Apna Digital Sathi home">
-          <img src={LOGO_URL} alt="Apna Digital Sathi logo" className="h-9 w-auto shrink-0 sm:h-11" />
-          <span className="min-w-0 truncate font-display text-base font-bold text-navy sm:text-lg">
-            Apna Digital Sathi
-          </span>
+        <div aria-hidden />
+        <a href="#home" className="flex items-center justify-center" aria-label="Apna Digital Sathi home">
+          <img src={LOGO_URL} alt="Apna Digital Sathi logo" className="h-11 w-auto sm:h-12" />
         </a>
 
-        <div className="hidden items-center gap-1 lg:flex">
+        <div className="hidden items-center justify-end gap-1 lg:flex">
           {NAV_LINKS.map((l) => (
             <a
               key={l.href}
@@ -62,7 +60,7 @@ export function Navbar() {
           type="button"
           onClick={() => setOpen(true)}
           aria-label="Open menu"
-          className="rounded-md border border-border bg-card p-2 text-navy lg:hidden"
+          className="justify-self-end rounded-md border border-border bg-card p-2 text-navy lg:hidden"
         >
           <Menu size={20} />
         </button>
