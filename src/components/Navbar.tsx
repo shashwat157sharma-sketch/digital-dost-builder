@@ -62,7 +62,7 @@ export function Navbar() {
           type="button"
           onClick={() => setOpen(true)}
           aria-label="Open menu"
-          className="justify-self-end rounded-md border border-border bg-card p-2 text-navy lg:hidden"
+          className="rounded-md border border-border bg-card p-2 text-navy lg:hidden"
         >
           <Menu size={20} />
         </button>
