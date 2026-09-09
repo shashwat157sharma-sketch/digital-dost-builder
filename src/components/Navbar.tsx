@@ -31,14 +31,16 @@ export function Navbar() {
     >
       <nav
         aria-label="Main"
-        className="mx-auto grid max-w-7xl grid-cols-[1fr_auto_1fr] items-center gap-4 px-5 py-3 lg:px-8"
+        className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-5 py-3 lg:px-8"
       >
-        <div aria-hidden />
-        <a href="#home" className="flex items-center justify-center" aria-label="Apna Digital Sathi home">
-          <span className="font-display text-xl font-bold text-navy sm:text-2xl">Apna Digital Sathi</span>
+        <a href="#home" className="flex shrink-0 items-center gap-2.5" aria-label="Apna Digital Sathi home">
+          <img src={LOGO_URL} alt="" aria-hidden className="h-9 w-9 rounded-lg object-contain" />
+          <span className="font-display text-lg font-bold tracking-tight text-navy sm:text-xl">
+            Apna Digital Sathi
+          </span>
         </a>
 
-        <div className="hidden items-center justify-end gap-1 lg:flex">
+        <div className="hidden items-center gap-0.5 lg:flex">
           {NAV_LINKS.map((l) => (
             <a
               key={l.href}
