@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
-import { LOGO_URL, NAV_LINKS } from "./brand";
+import { NAV_LINKS } from "./brand";
 
 /** Fixed navbar: shadow only appears after scroll; slide-in menu on mobile. */
 export function Navbar() {
@@ -35,7 +35,7 @@ export function Navbar() {
       >
         <div aria-hidden />
         <a href="#home" className="flex items-center justify-center" aria-label="Apna Digital Sathi home">
-          <img src={LOGO_URL} alt="Apna Digital Sathi logo" className="h-11 w-auto sm:h-12" />
+          <span className="font-display text-xl font-bold text-navy sm:text-2xl">Apna Digital Sathi</span>
         </a>
 
         <div className="hidden items-center justify-end gap-1 lg:flex">
@@ -81,7 +81,7 @@ export function Navbar() {
           }`}
         >
           <div className="mb-6 flex items-center justify-between">
-            <img src={LOGO_URL} alt="" className="h-9 w-auto" />
+            <span className="font-display text-lg font-bold text-navy">Apna Digital Sathi</span>
             <button
               type="button"
               onClick={() => setOpen(false)}
