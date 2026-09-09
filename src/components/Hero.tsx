@@ -32,7 +32,7 @@ export function Hero() {
               height={112}
             />
             <p className="mt-4 font-display text-2xl font-bold text-navy sm:text-3xl">Apna Digital Sathi</p>
-            <p className="mt-2 text-sm font-semibold text-primary sm:text-base">Every Shop&apos;s Digital Friend</p>
+            <p className="mt-2 text-sm font-semibold text-primary sm:text-base">&nbsp;&nbsp;</p>
           </div>
         </Reveal>
 
