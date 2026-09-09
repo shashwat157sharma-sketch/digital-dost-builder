@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
-import { LOGO_URL, NAV_LINKS } from "./brand";
+import { NAV_LINKS } from "./brand";
 
 /** Fixed navbar: shadow only appears after scroll; slide-in menu on mobile. */
 export function Navbar() {
