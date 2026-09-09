@@ -10,7 +10,29 @@ export function Contact() {
 
   function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    // TODO: send form data to a backend endpoint or form service.
+    const form = e.currentTarget;
+    const data = new FormData(form);
+    const name = String(data.get("name") || "").trim();
+    const business = String(data.get("business") || "").trim();
+    const phone = String(data.get("phone") || "").trim();
+    const message = String(data.get("message") || "").trim();
+
+    const text = [
+      "Hi Apna Digital Sathi,",
+      name && `My name is ${name}.`,
+      business && `I run ${business}.`,
+      phone && `My phone number is ${phone}.`,
+      message && `I need help with: ${message}`,
+      "I'm interested in your digital marketing services.",
+    ]
+      .filter(Boolean)
+      .join(" ");
+
+    window.open(
+      `https://wa.me/918114080695?text=${encodeURIComponent(text)}`,
+      "_blank",
+      "noopener,noreferrer"
+    );
     setSent(true);
   }
 
