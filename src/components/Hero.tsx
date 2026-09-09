@@ -1,5 +1,5 @@
 import { ArrowRight, MessageCircle, TrendingUp } from "lucide-react";
-import { CONTACT, LOGO_URL } from "./brand";
+import { CONTACT } from "./brand";
 import { Reveal } from "./Reveal";
 
 /** Hero: brand gradient wash + faint circuit motif echoing the logo. */
