@@ -24,14 +24,7 @@ export function Hero() {
       <div className="mx-auto max-w-4xl px-5 text-center lg:px-8">
         <Reveal>
           <div className="flex flex-col items-center">
-            <img
-              src={LOGO_URL}
-              alt="Apna Digital Sathi logo"
-              className="h-24 w-auto sm:h-28"
-              width={180}
-              height={112}
-            />
-            <p className="mt-4 font-display text-2xl font-bold text-navy sm:text-3xl">Apna Digital Sathi</p>
+            <p className="font-display text-2xl font-bold text-navy sm:text-3xl">Apna Digital Sathi</p>
             <p className="mt-2 text-sm font-semibold text-primary sm:text-base">&nbsp;&nbsp;</p>
           </div>
         </Reveal>

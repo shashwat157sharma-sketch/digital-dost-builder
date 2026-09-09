@@ -1,6 +1,7 @@
 import { Check } from "lucide-react";
 import { Section } from "./Section";
 import { Reveal } from "./Reveal";
+import { CONTACT } from "./brand";
 
 /* ===========================================================
    PLACEHOLDER PRICING TIERS
@@ -63,7 +64,9 @@ export function Pricing() {
               ))}
             </ul>
             <a
-              href="#contact"
+              href={CONTACT.whatsappPricing}
+              target="_blank"
+              rel="noopener noreferrer"
               className={`mt-7 rounded-full px-5 py-3 text-center text-sm font-semibold transition-colors ${
                 t.featured
                   ? "bg-gradient-brand text-primary-foreground"
